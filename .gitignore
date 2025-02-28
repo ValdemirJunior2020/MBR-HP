@@ -1,23 +1,51 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Node.js Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pnpm-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+.vscode/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Build Files
+dist/
+build/
+.cache/
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
+# Environment Variables
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.stackdump
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
+
+# IDEs & Editors
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Testing
+coverage/
+jest/
+cypress/
+
+# Miscellaneous
+*.bak
+*.swp
+*.s
